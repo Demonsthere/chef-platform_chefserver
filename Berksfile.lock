@@ -1,0 +1,7 @@
+DEPENDENCIES
+  platform_chefserver
+    path: .
+    metadata: true
+
+GRAPH
+  platform_chefserver (0.1.0)
