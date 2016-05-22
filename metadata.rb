@@ -1,6 +1,6 @@
 name 'platform_chefserver'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Jakub Błaszczyk'
+maintainer_email 'jakub.blaszczyk@sap.com'
 license 'all_rights'
 description 'Installs/Configures chef-platform_chefserver'
 long_description 'Installs/Configures chef-platform_chefserver'

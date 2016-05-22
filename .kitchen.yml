@@ -13,13 +13,14 @@ platforms:
   - name: ubuntu/precise64
 
 suites:
-  - name: chef_server
+  - name: chefserver
     run_list:
       - recipe[platform_chefserver::default]
     attributes:
     driver:
       network:
-        - [ 'forwarded_port', { guest: 4243, host: 4243 } ]
+        - [ 'forwarded_port', { guest: 443, host: 8443 } ]
+        - [ 'forwarded_port', { guest: 80, host: 8080 } ]
         - [ 'private_network', { ip: '192.168.24.50' } ]
       synced_folders:
         - ["cookbooks/", "/var/cookbooks"]
